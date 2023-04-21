@@ -20,8 +20,8 @@ function generate() {
         let minAndMax = pointAndMode[0].split('-');
         let hasMax = minAndMax.length > 1;
 
-        // createPoints(minAndMax[0], (hasMax ? minAndMax[1] : minAndMax[0]), (hasMode ? pointAndMode[1].toLocaleLowerCase() : "none"))
-        createPoints(7, 49, "eoo")
+        console.log(minAndMax);
+        createPoints(Number(minAndMax[0]), Number((hasMax ? minAndMax[1] : minAndMax[0])), (hasMode ? pointAndMode[1].toLocaleLowerCase() : "none"))
     }
 }
 
